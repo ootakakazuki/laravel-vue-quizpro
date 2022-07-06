@@ -1,10 +1,29 @@
 
 
+
 .quiz-container{
 
     display: flex;
     flex-wrap: wrap;
     gap: 3%;
+}
+
+.quiz-wh-container{
+    border: solid 1px;
+    margin: 0 auto;
+    /*
+    gap: 0 30px;
+    justify-content: center;
+    */
+
+}
+
+.quiz-wh-container p{
+    border: solid 1px;
+    margin: 0 auto;
+    font-size: 2em;;
+    width: 50%;
+    text-align: center;
 }
 
 .quiz{
@@ -17,3 +36,27 @@
     width: 100%;
 }
 
+
+
+
+/* select_wh  */
+
+.ques-container{
+    border: solid 1px;
+    margin: 0 auto;
+}
+
+.ques-container > .sentence{
+    border: solid 1px;
+    font-size: 2em;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.ques-container > .q{
+    width: 50%;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+}

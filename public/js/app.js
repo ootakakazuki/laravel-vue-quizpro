@@ -31,13 +31,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+let kodai = document.getElementById("kodai");
+kodai.addEventListener('click', hoge2);
 
-
-let hoge = () => {
+function hoge2()
+{
     alert("1");
 }
-
-
 
 
 

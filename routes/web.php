@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuizController;
+use App\Models\Quiz;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +44,21 @@ Route::get('/select_wh', funtion () {
 */
 
 Route::get('/select_wh', function () {
-    return view('select_wh');
+    $questions = Quiz::orderBy('id', 'asc') -> get();
+    return view('select_wh',[
+        'questions' => $questions
+    ]);
+    //return view('select_wh');
 });
+
+Route::get('/adminpage', [QuizController::class, 'index']);
+
+/*
+Route::get('/adminpage', function () {
+    return view('adminpage');
+});
+
+*/
+
+
 
