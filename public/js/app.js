@@ -1,3 +1,8 @@
+
+
+
+
+
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -31,8 +36,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 let kodai = document.getElementById("kodai");
-kodai.addEventListener('click', hoge2);
+kodai.addEventListener('click', function(){
+    alert(2);
+});
+
 
 function hoge2()
 {
@@ -40,6 +49,23 @@ function hoge2()
 }
 
 
+
+//let qs = document.getElementsByClassName(".q");
+let qs = document.querySelectorAll(".q");
+let ans = document.getElementById("ans");
+
+
+let kaitouKakunin = () => {
+    alert("hoge");
+    ans.classList.toggle("visans");
+
+}
+
+for (let i = 0; i < (qs.length); i++){
+    qs[i].addEventListener('click', kaitouKakunin);
+}
+// 正解数
+let correct_count = 0;
 
 
 

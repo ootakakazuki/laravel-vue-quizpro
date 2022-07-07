@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuizController;
 use App\Models\Quiz;
-
+use App\Http\Controllers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,6 +59,8 @@ Route::get('/adminpage', function () {
 });
 
 */
+
+Route::get('ajax/comedian', '\App\Http\Controllers\Ajax\ComedianController@index');
 
 
 

@@ -11,6 +11,8 @@
 .quiz-wh-container{
     border: solid 1px;
     margin: 0 auto;
+    background: linear-gradient(to right black, white);
+
     /*
     gap: 0 30px;
     justify-content: center;
@@ -46,17 +48,39 @@
     margin: 0 auto;
 }
 
-.ques-container > .sentence{
+.ques-container .sentence{
     border: solid 1px;
     font-size: 2em;
     margin: 0 auto;
+
     width: 50%;
+
+/*
     text-align: center;
+*/
 }
 
-.ques-container > .q{
+.ques-container .q{
+
     width: 50%;
+
     font-size: 1.5em;
     margin: 0 auto;
+
     text-align: center;
+    border: solid 1px;
+    background: linear-gradient(to right, blue, pink);
+    color: aliceblue;
 }
+
+.ans{
+    visibility: hidden;
+}
+
+.ans .visans{
+    visibility: visible;
+}
+
+
+
+

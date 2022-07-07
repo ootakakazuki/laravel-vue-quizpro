@@ -50,11 +50,11 @@
                 <div class="q q1">{{$question -> q1}}</div>
                 <div class="q q2">{{$question -> q2}}</div>
                 <div class="q q3">{{$question -> q3}}</div>
-                <div class="q q4">{{$question -> q4}}</div>   
+                <div class="q q4">{{$question -> q4}}</div>
+                <div id="ans" class="ans">正解は　{{$question -> answer}}</div>
             @endforeach
 
         </div>
-
         <script src="{{ asset('js/app.js') }}"></script> 
     </body>
 </html>
